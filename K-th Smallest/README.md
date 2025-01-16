@@ -52,8 +52,8 @@ The **5-th smallest element** in the matrix is `9`.
     [10, 11, 13],
     [12, 13, 15]
  ]
-
-- **Output**
+```
+- **`Output`**
 
 ```bash
    The 5-th smallest element is: 9
