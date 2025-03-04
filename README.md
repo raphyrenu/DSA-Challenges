@@ -140,4 +140,4 @@ Before you begin, ensure that you have the following installed on your system:
 1. **Clone the Repository**:
    First, clone this repository to your local machine:
    ```bash
-   git clone https://github.com/yourusername/DSA-Challenges.git
+   git clone https://github.com/raphael-nibishaka/DSA-Challenges.git
