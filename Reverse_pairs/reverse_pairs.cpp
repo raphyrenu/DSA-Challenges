@@ -3,12 +3,16 @@
 #include <vector>
 using namespace std;
 
-int merge(vector<int>& nums, int low, int mid, int high) {
+int merge(vector<int>& nums, int low, int mid, int high, vector<pair<int, int>>& pairs) {
     int count = 0;
     int j = mid + 1;
+
     for (int i = low; i <= mid; i++) {
         while (j <= high && nums[i] > 2LL * nums[j]) {
             j++;
+        }
+        for (int k = mid + 1; k < j; ++k) {
+            pairs.push_back({nums[i], nums[k]});
         }
         count += (j - (mid + 1));
     }
@@ -32,17 +36,17 @@ int merge(vector<int>& nums, int low, int mid, int high) {
     return count;
 }
 
-int mergeSort(vector<int>& nums, int low, int high) {
+int mergeSort(vector<int>& nums, int low, int high, vector<pair<int, int>>& pairs) {
     if (low >= high) return 0;
     int mid = (low + high) / 2;
-    int inv = mergeSort(nums, low, mid);
-    inv += mergeSort(nums, mid + 1, high);
-    inv += merge(nums, low, mid, high);
+    int inv = mergeSort(nums, low, mid, pairs);
+    inv += mergeSort(nums, mid + 1, high, pairs);
+    inv += merge(nums, low, mid, high, pairs);
     return inv;
 }
 
-int countReversePairs(vector<int>& nums) {
-    return mergeSort(nums, 0, nums.size() - 1);
+int countReversePairs(vector<int>& nums, vector<pair<int, int>>& pairs) {
+    return mergeSort(nums, 0, nums.size() - 1, pairs);
 }
 
 int main() {
@@ -55,7 +59,15 @@ int main() {
         cin >> nums[i];
     }
 
-    int result = countReversePairs(nums);
+    vector<pair<int, int>> pairs;
+    int result = countReversePairs(nums, pairs);
+
     cout << "Number of reverse pairs: " << result << endl;
+    if (!pairs.empty()) {
+        cout << "The reverse pairs are:\n";
+        for (auto& p : pairs) {
+            cout << "(" << p.first << ", " << p.second << ")\n";
+        }
+    }
     return 0;
 }
