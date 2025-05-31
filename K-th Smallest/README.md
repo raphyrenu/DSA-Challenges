@@ -6,7 +6,7 @@ Given an `n x n` matrix where each of the rows and columns is sorted in ascendin
 
 ### Example:
 
-For the following input matrix and `k = 5` eg:
+For the following input matrix and `k = 5` :
 
 The **5-th smallest element** in the matrix is `9`.
 
