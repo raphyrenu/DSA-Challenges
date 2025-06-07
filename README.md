@@ -1,6 +1,6 @@
 # DSA Challenges - C++ Solutions
 
-Welcome to the **DSA Challenges - C++ Solutions** repository! This project provides solutions to 40 advanced Data Structures and Algorithms (DSA) problems implemented in **C++**. The aim of this repository is to help you improve problem-solving skills, learn new algorithms, and enhance your understanding of core concepts in data structures and algorithms.
+Welcome to the **DSA Challenges - C++ Solutions** repository! This project provides solutions to about 40 advanced Data Structures and Algorithms (DSA) problems implemented in **C++**. The aim of this repository is to help you improve problem-solving skills, learn new algorithms, and enhance your understanding of core concepts in data structures and algorithms.
 
 The repository is organized such that each problem is accompanied by a solution that is explained thoroughly, along with the time and space complexity analysis. The problems span across various domains such as **Dynamic Programming**, **Recursion**, **Greedy Algorithms**, **Graph Theory**, **Combinatorics**, and more.
 
