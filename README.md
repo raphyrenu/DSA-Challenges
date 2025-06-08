@@ -50,7 +50,7 @@ This project includes solutions to the following 40 DSA problems. Each solution 
 11. **Decode Ways II**
 12. **Longest Substring Without Repeating Characters**
 13. **Jump Game II**
-14. **Coin Change II (Combinations of Coins)**
+14. **Coin Change II (Combinations of Coins())**
 15. **Find Minimum in Rotated Sorted Array**
 16. **Longest Zigzag Subsequence**
 17. **Maximum Length of Repeated Subarray**
